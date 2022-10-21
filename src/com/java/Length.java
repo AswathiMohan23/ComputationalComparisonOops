@@ -20,7 +20,7 @@ public class Length {
 
         //equality
         System.out.println("\nResult after equality check ===>");
-        Boolean equality = check_Equality(length_of_First_Line, length_of_Second_Line);
+        Boolean equality = checkEquality(length_of_First_Line, length_of_Second_Line);
         if (equality == true)
             System.out.println("Both lines are equal");
         else
@@ -37,7 +37,7 @@ public class Length {
         else
             System.out.println("Length of the first line > length of second line");
     }
-    public static Boolean check_Equality(Integer length_firstLine, Integer length_secondLine) {
+    public static Boolean checkEquality(Integer length_firstLine, Integer length_secondLine) {
         Boolean result = length_firstLine.equals(length_secondLine);
         return (result);
     }
